@@ -226,3 +226,5 @@ linter:
     - use_to_and_as_if_applicable
     - valid_regexps
     - void_checks
+    - lines_longer_than_80_chars:
+        enabled: false
