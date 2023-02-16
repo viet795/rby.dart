@@ -10,6 +10,7 @@ class RbyListTile extends StatelessWidget {
     this.borderRadius,
     this.color,
     this.onTap,
+    this.onLongPress,
     this.enabled = true,
     this.contentPadding,
     this.leadingPadding,
@@ -27,6 +28,7 @@ class RbyListTile extends StatelessWidget {
   final BorderRadius? borderRadius;
   final Color? color;
   final VoidCallback? onTap;
+  final VoidCallback? onLongPress;
   final bool enabled;
 
   final EdgeInsetsGeometry? contentPadding;
@@ -49,6 +51,7 @@ class RbyListTile extends StatelessWidget {
       borderRadius: borderRadius,
       child: InkWell(
         onTap: enabled ? onTap : null,
+        onLongPress: enable ? onLongPress : null
         borderRadius: borderRadius,
         child: IconTheme(
           data: theme.iconTheme.copyWith(
