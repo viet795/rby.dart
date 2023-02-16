@@ -51,7 +51,7 @@ class RbyListTile extends StatelessWidget {
       borderRadius: borderRadius,
       child: InkWell(
         onTap: enabled ? onTap : null,
-        onLongPress: enabled ? onLongPress : null
+        onLongPress: enabled ? onLongPress : null,
         borderRadius: borderRadius,
         child: IconTheme(
           data: theme.iconTheme.copyWith(
